@@ -6,7 +6,7 @@
 
     <groupId>cc.corentin.util</groupId>
     <artifactId>ConcurrentHashMapAutoCleaning</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.1</version>
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>This class implements the ConcurrentMap interface and allows the creation of a map that automatically
@@ -19,6 +19,13 @@
             <email>corentin@corentin.cc</email>
         </developer>
     </developers>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
 
     <scm>
         <connection>scm:git:git://github.com/corentinVei/ConcurrentHashMapAutoCleaning.git</connection>
@@ -42,7 +49,7 @@
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.7</version>
+                <version>1.6.13</version>
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>ossrh</serverId>

@@ -20,6 +20,19 @@ The same logic applies to the `lastTimeUsedMillis` and `extraLifeTimeAfterUseMil
 
 ## Usage
 
+### Installing via Maven
+```xml
+<dependency>
+    <groupId>cc.corentin.util</groupId>
+    <artifactId>ConcurrentHashMapAutoCleaning</artifactId>
+    <version>0.1</version>
+</dependency>
+```
+### Installing via Gradle
+```groovy
+implementation group: 'cc.corentin.util', name: 'ConcurrentHashMapAutoCleaning', version: '0.1'
+```
+
 To clean up the map of entries that have exceeded the predefined lifespan, 
 the `setCleanPeriodMillis` method must be called with a value greater than 0 in the constructor or using the `setCleanPeriod(long cleanPeriodMillis)` method. 
 A thread will be launched to clean up the map every `cleanPeriodMillis`milliseconds. 
