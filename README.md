@@ -38,7 +38,7 @@ the `setCleanPeriodMillis` method must be called with a value greater than 0 in 
 A thread will be launched to clean up the map every `cleanPeriodMillis`milliseconds. 
 If `cleanPeriodMillis` is set to 0, the thread will be stopped. 
 The `cleanBlocking()` method can be used to clean up the map manually without using a thread. 
-If you want to see usage examples and test cases, please check the [test](src/test/java/cc/corentin/util/TestConcurrentHashmapAutoCleaning.java) folder in this project.
+If you want to see usage examples, please check [this GitHub repository](https://github.com/corentinVei/ExampleConcurrentHashMapAutoCleaning/blob/main/src/main/java/cc/corentin/Main.java).
 
 ## Key Concepts
 
